@@ -1,0 +1,13 @@
+- var pageTitle = "Dashbord";
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        include pug/layout/styles
+    body
+     .page.homePage
+        include pug/layout/sidebar
+        .contentArea 
+            h1 #{pageTitle}
