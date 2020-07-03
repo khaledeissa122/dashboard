@@ -39,7 +39,7 @@ gulp.task("js", function () {
 
 gulp.task("connect", function () {
   connect.server({
-    root:'./dist/',
+    root: "./dist/",
   });
   livereload.listen();
 });
@@ -51,4 +51,4 @@ gulp.task("watch", function () {
   gulp.watch("stage/js/*.js", ["js"]);
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task("default", ["connect", "watch"]);
