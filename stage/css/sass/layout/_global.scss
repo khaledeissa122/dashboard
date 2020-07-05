@@ -10,15 +10,32 @@ body {
   display: flex;
   justify-content: flex-end;
   .contentArea {
+    background-color: #f7f6fc;
     width: calc(100% - 250px);
     min-height: 100%;
-    padding: 20px;
+    padding: 0px;
     justify-content: end;
     transition: 0.3s ease-in-out;
     will-change: width;
     &.noSidebar {
       width: 100%;
     }
-   
+  }
+  .pageHead .pageTitle {
+    color: #1b203e;
   }
 }
+.spacer {
+  flex-grow: 1;
+}
+
+// header : #fdfffc
+// side bar :#1b203e
+// area content :#f7f6fc
+// extra :#fe4d5f
+// icons:#b6b6c0
+// text:#4e4e57
+// extra2:#fcfafd
+// text2:#cac9ce
+// border:#2cbcab
+// active:#626584

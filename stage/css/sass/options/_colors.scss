@@ -1,0 +1,50 @@
+$themes: (
+  green-theme: (
+    color: #1b203e,
+  ),
+  blue-theme: (
+    color: #2980b9,
+  ),
+  red-theme: (
+    color: #c0392b,
+  ),
+  orange-theme: (
+    color: #d35400,
+  ),
+  purple-theme: (
+    color: #8e44ad,
+    dark: true,
+  ),
+);
+
+@each $theme, $map in $themes {
+  .#{$theme} {
+    $color: map-get($map, color);
+    $dark: map-get($map, dark);
+
+    @if $dark == true{
+      .page .pageHead .pageTitle {
+        color: $dark;
+      }
+    }@else{
+      .page .pageHead .pageTitle {
+        color: $color;
+      }
+      .sidebar {
+        background-color: $color;
+      }
+      .megaCont {
+        background-color: $color;
+      }
+      .page .contentArea {
+        background-color: $color !important;
+      }
+      .header .toggle-sidebar:hover {
+        color: $color;
+      }
+      .header .usermenu-container .dropdown-menu .user-info h3 {
+        color: $color;
+      }
+    }
+  }
+}

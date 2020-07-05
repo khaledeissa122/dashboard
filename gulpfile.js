@@ -7,6 +7,7 @@ var livereload = require("gulp-livereload");
 var minify = require("gulp-minify");
 var sourcemaps = require("gulp-sourcemaps");
 var connect = require("gulp-connect");
+var wait = require("gulp-wait");
 
 gulp.task("html", function () {
   return gulp
@@ -19,6 +20,7 @@ gulp.task("html", function () {
 gulp.task("css", function () {
   return gulp
     .src(["stage/css/**/*.scss", "stage/css/**/*.css"])
+    .pipe(wait(500))
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(prefix())

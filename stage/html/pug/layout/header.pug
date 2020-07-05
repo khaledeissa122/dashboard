@@ -1,2 +1,60 @@
 .header
     i.fas.fa-angle-left.fa-lg.toggleSidebar
+    .dropdown.notifier
+        i.fas.fa-bell.fa-md#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+           .notiHead
+            | Notification
+            span 50
+           .notiContent 
+            ul.list-unstyled
+              li
+                .avatar KM
+                  i.fas.fa-envelope-open-text.fa-sm
+                .notiCont
+                    | You got email form Mohamed
+                    small 5:04pm
+              li
+                .avatar KM
+                  i.fas.fa-feather-alt.fa-sm
+                .notiCont
+                    | You got email form Mohamed
+                    small 5:04pm
+              li
+                .avatar KM
+                  i.fas.fa-paw.fa-sm
+                .notiCont
+                    | You got email form Mohamed
+                    small 5:04pm
+              li
+                .avatar KM
+                  i.fas.fa-envelope-open-text.fa-sm
+                .notiCont
+                    | You got email form Mohamed
+                    small 5:04pm            
+           .dropdown-item.notiFoot: a(href="#") Show all notifications
+    .spacer
+    .dropdown.megaMenu.dropleft
+        .megaCont#dropmega(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/avatar.png", alt="error in loading avatar")
+            p.toggleName Khaled Eissa
+            
+            .dropdown-menu.dropdown-menu-right.insideMega(aria-labelledby='dropmega')
+                .userInfo
+                    h3.p-1.pb-0.mb-0 Khaled Eissa     
+                    p.mb-1.p-2 this is my info
+                    hr.mb-1.mt-0        
+                ul.activity.list-unstyled.p-2
+                  li.p-2 this is my comments
+                  li.p-2 this is my Liks
+                  li.p-2 this is my posts
+                  li.p-2 this is my shares
+                hr.mb-1  
+                .userLinks
+                 i.fas.fa-cogs.fa-sm  
+                  small Setting
+                 i.fas.fa-user.fa-sm   
+                  small Profile
+                 i.fas.fa-power-off.fa-sm  
+                  small Logout  
+

@@ -1,2 +1,23 @@
 .sidebar
-    |Khaled Mohamed
+    .logoArea Khaled Eissa
+    ul.linksArea.listUnstyled
+        li: a(href="index.html" class= pageTitle === "Dashbord" ? "active": '') Dashboard
+        li
+           a.toggleList(href="#")
+            | Form
+            i.fas.fa.fa-angle-down
+           ul.chiledLinks
+            li: a(href="#") Input
+            li: a(href="#") button
+            li: a(href="#") Textarea
+            li: a(href="#") Select
+        li  
+            a.toggleList(href="#") 
+             | Misc
+             i.fas.fa.fa-angle-down
+            ul.chiledLinks
+             li: a(href="#") Input
+             li: a(href="#") button
+             li: a(href="#") Textarea
+             li: a(href="#") Select
+        li: a(href="about.html"  class= pageTitle === "About me" ? "active": '') About me     
