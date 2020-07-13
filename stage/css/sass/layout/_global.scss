@@ -4,6 +4,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f7f6fc;
 }
 .page {
   min-height: 100vh;
@@ -21,12 +22,23 @@ body {
       width: 100%;
     }
   }
+  .pageHead {
+    width: 100%;
+  }
   .pageHead .pageTitle {
     color: #1b203e;
+  }
+  .pageDesc {
+    color: #b3b3b3cf;
   }
 }
 .spacer {
   flex-grow: 1;
+}
+@media (max-width: 1200px) {
+  .contentArea {
+    width: 100% !important;
+  }
 }
 
 // header : #fdfffc

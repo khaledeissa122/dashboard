@@ -1,8 +1,10 @@
 .header
-    i.fas.fa-angle-left.fa-lg.toggleSidebar
+    i.fas.fa-angle-left.fa-lg.toggleSidebar.d-none.d-xl-block
+    i.fas.fa-angle-right.fa-lg.smallToggle.d-xl-none
+    .spacer
     .dropdown.notifier
-        i.fas.fa-bell.fa-md#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+        i.fas.fa-bell.fa-lg#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton')
            .notiHead
             | Notification
             span 50
@@ -33,22 +35,28 @@
                     | You got email form Mohamed
                     small 5:04pm            
            .dropdown-item.notiFoot: a(href="#") Show all notifications
-    .spacer
+        .darkAndLight
+         input#chk.checkbox(type='checkbox')
+         label.label(for='chk')
+            i.fas.fa-moon.fa-xs
+            i.fas.fa-sun.fa-xs
+            .ball
+    
     .dropdown.megaMenu.dropleft
         .megaCont#dropmega(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
             img.avatar.rounded-circle(src="imgs/avatar.png", alt="error in loading avatar")
             p.toggleName Khaled Eissa
             
             .dropdown-menu.dropdown-menu-right.insideMega(aria-labelledby='dropmega')
-                .userInfo
+                .userInfo.p-3
                     h3.p-1.pb-0.mb-0 Khaled Eissa     
                     p.mb-1.p-2 this is my info
                     hr.mb-1.mt-0        
                 ul.activity.list-unstyled.p-2
-                  li.p-2 this is my comments
-                  li.p-2 this is my Liks
-                  li.p-2 this is my posts
-                  li.p-2 this is my shares
+                  li.p-3 this is my comments
+                  li.p-3 this is my Liks
+                  li.p-3 this is my posts
+                  li.p-3 this is my shares
                 hr.mb-1  
                 .userLinks
                  i.fas.fa-cogs.fa-sm  
@@ -57,4 +65,5 @@
                   small Profile
                  i.fas.fa-power-off.fa-sm  
                   small Logout  
+        
 

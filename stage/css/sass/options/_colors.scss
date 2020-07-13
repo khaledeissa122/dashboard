@@ -1,50 +1,69 @@
 $themes: (
-  green-theme: (
+  light-theme: (
     color: #1b203e,
+    bgColor: #f7f6fc,
+    sidebarColor: #1b203e,
+    fontColor: #1b203e,
+    secondFontColor: #212529,
+    teal:#68dbca
   ),
-  blue-theme: (
-    color: #2980b9,
-  ),
-  red-theme: (
-    color: #c0392b,
-  ),
-  orange-theme: (
-    color: #d35400,
-  ),
-  purple-theme: (
-    color: #8e44ad,
-    dark: true,
+
+  dark-theme: (
+    color: #65667a,
+    bgColor: #383a47,
+    sidebarColor: #333541,
+    fontColor: #e8eaef,
+    secondFontColor: #757784,
+    teal:#68dbca
   ),
 );
 
 @each $theme, $map in $themes {
   .#{$theme} {
     $color: map-get($map, color);
-    $dark: map-get($map, dark);
-
-    @if $dark == true{
-      .page .pageHead .pageTitle {
-        color: $dark;
-      }
-    }@else{
-      .page .pageHead .pageTitle {
-        color: $color;
-      }
-      .sidebar {
-        background-color: $color;
-      }
-      .megaCont {
-        background-color: $color;
-      }
-      .page .contentArea {
-        background-color: $color !important;
-      }
-      .header .toggle-sidebar:hover {
-        color: $color;
-      }
-      .header .usermenu-container .dropdown-menu .user-info h3 {
-        color: $color;
-      }
+    $bgColor: map-get($map, bgColor);
+    $sidebarColor: map-get($map, sidebarColor);
+    $fontColor: map-get($map, fontColor);
+    $secondFontColor: map-get($map, secondFontColor);
+    background-color: $bgColor;
+    .page .pageHead .pageTitle {
+      color: $fontColor;
+    }
+    .page .pageHead .pageDesc {
+      color: $secondFontColor;
+    }
+    .sidebar {
+      background-color: $sidebarColor;
+      color: $fontColor;
+    }
+    .megaCont {
+      background-color: $bgColor;
+    }
+    .page .contentArea {
+      background-color: $bgColor !important;
+    }
+    .content .card{
+      background-color: $color !important;
+      color:$fontColor;
+    }
+    .perfect-datetimepicker{
+      background-color: $color;
+    }
+    .perfect-datetimepicker table{
+      background-color: $color;
+    }
+    .perfect-datetimepicker{
+      color: $fontColor;
+    }
+    .header{
+      background-color: $bgColor !important;
+    }
+    .header .toggle-sidebar:hover {
+      color: $color;
+    }
+    .header .usermenu-container .dropdown-menu .user-info h3 {
+      color: $color;
     }
   }
+  
 }

@@ -1,0 +1,73 @@
+.container.contentCont
+  .row
+    include ./pageHead
+    .col-sm.col-md-12.col-lg-8
+      .row
+        .col-sm
+         .card.mb-2.welcome
+            img.welcomeImg.card-img-right(src='imgs/welcome.svg',alt="Error")  
+            .card-body
+                small.font-weight-bold Monday 7 May 2020
+                h4.mt-3
+                 | Good Morning 
+                 br
+                 | Khaled Eissa
+                h6.mt-3 You have 
+                  span.text-primary 34 Message 
+                  | today 
+      .row
+        .col-sm
+         .card.mb-2
+            .card-body
+                canvas#myChart(width='400' height='400')
+        .col-sm
+          .card.mb-2
+            .card-body
+                canvas#myPieChart(width='400' height='400')
+      .req.d-flex
+        .h6 Requests
+        .spacer
+        a(href="#") Show all 
+         i.fas.fa-angle-right
+      .row
+        .col-sm
+          .card.mb-2
+            .card-body
+               h6 Eman Mohamed
+               i.fas.fa-calendar-day.mr-3
+               small.font-weight-bold Monday 7 May 2020
+               i.fas.fa-clock.mr-3
+               small.font-weight-bold 02.30 pm
+               a.d-flex.justify-content-end(href="#") See details  
+                i.fas.fa-angle-right.mt-1.ml-1
+        .col-sm
+          .card.mb-2
+            .card-body
+               h6 Mostafa ibrahim
+               i.fas.fa-calendar-day.mr-3
+               small.font-weight-bold Monday 7 May 2020
+               i.fas.fa-clock.mr-3
+               small.font-weight-bold 02.30 pm
+               a.d-flex.justify-content-end(href="#") See details  
+                i.fas.fa-angle-right.mt-1.ml-1
+        .col-sm
+          .card.mb-2
+            .card-body
+               h6 Ahmed zaki
+               i.fas.fa-calendar-day.mr-3
+               small.font-weight-bold Monday 7 May 2020
+               i.fas.fa-clock.mr-3
+               small.font-weight-bold 02.30 pm
+               a.d-flex.justify-content-end(href="#") See details  
+                i.fas.fa-angle-right.mt-1.ml-1   
+    .col-sm-4.col-md-12.col-lg-4
+      .card.mb-2
+            .card-body.d-flex.justify-content-center.flex-wrap
+                #myDatePicker
+                .event.d-flex.mt-3
+                    small.font-weight-bold 02.30 pm
+                    .eventContent.p-2.rounded-lg.ml-2
+                        h6 Ahmed zaki
+                        small.font-weight-bold 02.30 pm 
+                        | : 
+                        small.font-weight-bold 02.30 pm      

@@ -1,0 +1,60 @@
+.content {
+  .contentCont {
+    color: #696969;
+    .card {
+      box-shadow: 6px 8px 14px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0.7rem;
+      border: 0;
+      small {
+        color: #d5d5d5;
+      }
+      &.welcome {
+        position: relative;
+        .welcomeImg {
+          position: absolute;
+          width: 52%;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      .card-body {
+        h6 span {
+          color: #20c997 !important;
+          cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: #20c997;
+            font-size: 0.9rem;
+        }
+        .perfect-datetimepicker{
+            border: 0 !important;
+        }
+        .perfect-datetimepicker table td.weekend{
+            color: #20c997;
+        }
+        .perfect-datetimepicker tbody td.selected{
+            background-color: #f06f69;
+            border: 0;
+            color: #fff;
+        }
+        .content .contentCont .card .card-body .perfect-datetimepicker tbody td.selected{
+            color: #fff !important;
+        }
+        .eventContent{
+            background-color: #f06f69;
+            color: #fff;
+            small{
+            color: #fff;
+            }
+        }
+      }
+    }
+    .req{
+        a{
+            text-decoration: none;
+            color: #20c997;
+        }
+    }
+  }
+}

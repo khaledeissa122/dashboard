@@ -1,0 +1,49 @@
+.content {
+  .contentCont {
+      &.about{
+          .card {
+            border-bottom-left-radius: 230px;
+            &.welcome {
+              position: relative;
+              .avatar{
+                position: absolute;
+                width: 180px;
+                height: 200px;
+                border-radius: 30px;
+                top: -50px;
+                left:-5px;
+                overflow: hidden;
+                box-shadow: 6px 8px 14px 6px rgba(0, 0, 0, 0.1);
+              }
+              .welcomeImg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .aboutInfo{
+                margin-left: 11rem;
+            }
+          }
+      }
+  }
+}
+
+@media (max-width: 1200px) {
+    .card{
+        border-bottom-left-radius: 0 !important;
+    }
+    .about{
+
+        .avatar {
+            width: 100px !important;
+            height: 120px !important;
+          left: 50% !important;
+          transform: translateX(-50%);
+        }
+    }
+    .aboutInfo{
+        margin-top: 3.5rem;
+        margin-left: 0 !important;
+    }
+  }
